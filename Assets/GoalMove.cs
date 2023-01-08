@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GoalMove : MonoBehaviour
 {
-    float speed = 1.0f;
-    float radius = 9.0f;
+    public float speed = 1.0f;
+    public float radius = -15.0f;
 
     void Update()
     {
-        this.transform.localPosition = new Vector3(radius * Mathf.Sin(Time.time * speed), 9.0f, radius * Mathf.Cos(Time.time * speed));
+        this.transform.localPosition = new Vector3(radius * Mathf.Sin(Time.time * speed), 20.0f, radius * Mathf.Cos(-Time.time * speed));
     }
 }
