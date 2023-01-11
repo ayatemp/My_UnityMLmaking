@@ -25,7 +25,7 @@ public class ReacherAgent : Agent
 
     Collider Goal_co;
 
-    private Palmscript palmscript;
+    public Palmscript palmscript;
 
     public override void Initialize()
     {
@@ -94,6 +94,7 @@ public class ReacherAgent : Agent
         //palmがgoalに衝突していたら報酬
         if(palmscript.collision == true)
         {
+            print("AddReward_now");
             AddReward(0.01f);
         }
     }

@@ -514,13 +514,14 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 50000
   Joint1: {fileID: 2137167971}
   Arm1: {fileID: 133879671}
   Joint2: {fileID: 2014371151}
   Arm2: {fileID: 1223247224}
   Palm: {fileID: 1325704621}
   Goal: {fileID: 999699126}
+  palmscript: {fileID: 1325704626}
 --- !u!114 &505312589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,9 +538,9 @@ MonoBehaviour:
     VectorObservationSize: 1
     NumStackedVectorObservations: 33
     m_ActionSpec:
-      m_NumContinuousActions: 0
+      m_NumContinuousActions: 32
       BranchSizes: 04000000
-    VectorActionSize: 04000000
+    VectorActionSize: 
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
